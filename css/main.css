@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333333;
+    background: #efefef;
+    line-height: 1.6;
+
+}
+
+#wrapper {
+    width: 1000px;
+    max-width: 100%;
+    margin: 0 auto;
+    background: #fff;
+    padding: 1em;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-gap: 1em;
+
+}
+
+#input-area,
+#output-area {
+}
+
+#input-area {
+    background: #fff5eb;
+    padding: 10px;
+}
+
+#error {
+    color: red;
+}

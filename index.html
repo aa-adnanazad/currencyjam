@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Jam</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <h1>Currency Jam</h1>
+            <p>Multiple currency rates downloader</p>
+        </div>
+        <div id="container">
+            <div id="input-area">
+                <form id="input-form">
+                    <p>Enter the date to find the currency rates of that day</p>
+                    <label for="date">Date</label>
+                    <br>
+                    <input type="date" name="date" id="date" max="" min="2000-1-1" required>
+                    <br>
+                    <button>Submit</button>
+                </form>
+
+            </div>
+            <div id="output-area">
+                <div id="download-area">
+                    <button id="download">Download this data</button>
+                    <div id="loading">
+                        Requesting the data <img src="img/loading.gif" alt="" width="100">
+                    </div>
+                    <div id="error">
+                        Something went wrong, please try again later
+                    </div>
+                </div>
+               <div id="the-table">
+                   <table border="1" width="100%">
+                       <thead>
+                           <tr>
+                               <td>Currency Code</td>
+                               <td>Currency Name</td>
+                               <td>Units per USD</td>
+                               <td>USD per Unit</td>
+                            </tr>
+                        </thead>
+                        <tbody class="table-body">
+                            <tr>
+                                <td>USD</td>
+                                <td>US Dollar</td>
+                                <td>1</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>EUR</td>
+                                <td>Euro</td>
+                                <td>0.876724711
+                                </td>
+                                <td>1.140608891
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>GBP</td>
+                                <td>British Pound</td>
+                                <td>0.79714239
+                                </td>
+                                <td>1.254481022
+                                </td>
+                            </tr>
+                        </tbody>
+                   </table>
+               </div>
+            </div>
+        </div>
+        <div id="footer">
+            <p>End of the app</p>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
